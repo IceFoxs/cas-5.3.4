@@ -26,8 +26,6 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
-		<!-- <dependency> <groupId>com.mchange</groupId> <artifactId>c3p0</artifactId> 
-			<version>0.9.5.2</version> </dependency> -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-slf4j-impl</artifactId>
@@ -981,6 +979,10 @@
 				<exclusion>
 					<groupId>com.zaxxer</groupId>
 					<artifactId>HikariCP-java6</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.mchange</groupId>
+					<artifactId>c3p0</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
